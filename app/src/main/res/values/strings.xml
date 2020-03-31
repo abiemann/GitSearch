@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GitSearch</string>
+    <string name="app_title">GitHub Searcher</string>
+
+    <string name="image_description">User Avatar</string>
+    <string name="server_error">Unable to connect to the server</string>
+    <string name="internet_connection_not_available">No Internet Connection</string>
+    <string name="hint_username_search">Search for Users</string>
+    <string name="hint_repo_search">Search for User\'s repositories</string>
+
+    <string name="user_detail_followers">\u0020Followers</string><!-- \u0020 is space -->
+    <string name="user_detail_following">Following\u0020</string>
+
+</resources>

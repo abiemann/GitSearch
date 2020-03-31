@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/default_margin">
+
+    <!-- repo avatar (square) -->
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/list_item_avatar_square_side_length"
+        android:layout_height="@dimen/list_item_avatar_square_side_length"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/image_description"/>
+
+    <!-- username -->
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        tools:text="USER NAME"/>
+
+    <!-- repo count -->
+    <TextView
+        android:id="@+id/repo_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        tools:text="REPO COUNT"/>
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.userlist.UserListActivity">
+
+    <EditText
+        android:id="@+id/username_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:inputType="text"
+        android:hint="@string/hint_username_search"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginStart="@dimen/default_padding"
+        android:layout_marginEnd="@dimen/default_padding"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_repo_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/username_search"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_margin="@dimen/default_margin"
+        tools:listitem="@layout/item_user"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="@dimen/progress_size"
+        android:layout_height="@dimen/progress_size"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/horizontal_margin"
+        android:indeterminate="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>
+
