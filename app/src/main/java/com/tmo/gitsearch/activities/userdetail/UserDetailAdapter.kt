@@ -36,10 +36,9 @@ class UserDetailAdapter(private val repoList:MutableList<ResponseRepository>, pr
 
                 // these are the field names in layout XML - requires experimental flag
                 repo_name.text = name
-                repo_name.tag = html_url // hide the URL in the views' tag
                 fork_count.text = forks_count.toString()
                 star_count.text = stargazers_count.toString()
-                containerView.setOnClickListener { onClick(repo_name.tag.toString()) }
+                containerView.setOnClickListener { onClick(html_url) }
             }
         }
     }
